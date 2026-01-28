@@ -1,0 +1,35 @@
+/bin
+Chứa các lệnh cơ bản (ls, cp, mv, bash…) cần thiết để hệ thống hoạt động ở chế độ tối thiểu và cho mọi người dùng.
+
+/sbin
+Chứa các lệnh quản trị hệ thống (fsck, ip, reboot…) chủ yếu dành cho root.
+
+/etc
+Chứa các file cấu hình hệ thống (network, users, services), không chứa binary hay dữ liệu người dùng.
+
+/home
+Thư mục cá nhân của người dùng thường (vd: /home/vy), nơi lưu file, config riêng của user.
+
+/root
+Home directory của user root, tách biệt với /home để tăng bảo mật.
+
+/usr
+Chứa ứng dụng, thư viện và tài nguyên dùng chung cho người dùng (user binaries, docs, libraries).
+
+/lib
+Chứa các thư viện cần thiết cho /bin và /sbin hoạt động (shared libraries).
+
+/boot
+Chứa file khởi động hệ thống như kernel (vmlinuz), initramfs, bootloader config (GRUB).
+
+/dev
+Chứa các file thiết bị đại diện cho phần cứng (ổ đĩa, USB, terminal…).
+
+/proc
+Filesystem ảo cung cấp thông tin kernel và tiến trình đang chạy (CPU, memory, PID…).
+
+/tmp
+Lưu file tạm thời, thường bị xóa khi reboot; mọi user đều có quyền ghi.
+
+/var
+Chứa dữ liệu thay đổi liên tục như log (/var/log), cache, mail, spool.

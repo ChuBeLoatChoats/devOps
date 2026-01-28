@@ -1,0 +1,39 @@
+1. Tạo/mở file bằng Vim
+
+Tại thư mục Home, mở (hoặc tạo mới) file xin-chao.txt:
+
+vim xin-chao.txt
+
+2. Chuyển sang Insert Mode
+
+Trong Vim, nhấn phím:
+
+i
+
+
+Màn hình chuyển sang chế độ soạn thảo, góc dưới bên trái hiển thị -- INSERT --.
+
+3. Soạn thảo nội dung
+
+Nhập nội dung vào file:
+
+Xin chao
+Toi dang hoc Linux
+Vim rat huu ich
+
+4. Lưu và thoát Vim
+
+Nhấn Esc để quay về Normal Mode
+
+Gõ lệnh:
+
+:wq
+
+
+Nhấn Enter để lưu file và thoát
+
+5. Kiểm tra nội dung file
+
+Dùng lệnh sau để xem lại nội dung đã lưu:
+
+cat xin-chao.txt

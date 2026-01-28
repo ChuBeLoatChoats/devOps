@@ -1,0 +1,49 @@
+Báo cáo: Sao chép, di chuyển và xóa file/thư mục trong Linux
+1. Vào thư mục hoc-linux/bai-tap và kiểm tra
+cd ~/hoc-linux/bai-tap
+ls -la
+
+
+Hiển thị danh sách các file hiện có, bao gồm cả file ẩn.
+
+2. Sao chép file
+
+Sao chép file danh-sach-lenh.txt sang thư mục ../ghi-chu/ với tên mới:
+
+cp danh-sach-lenh.txt ../ghi-chu/danh-sach-lenh-ban-sao.txt
+
+3. Di chuyển file ẩn
+
+Di chuyển file .file-an.txt sang thư mục ../ghi-chu/:
+
+mv .file-an.txt ../ghi-chu/
+
+4. Kiểm tra kết quả trong thư mục ghi-chu
+cd ../ghi-chu
+ls -la
+
+
+Kết quả kiểm tra cho thấy file đã được sao chép và di chuyển đúng vị trí.
+
+5. Xóa file an toàn
+
+Xóa file danh-sach-lenh-ban-sao.txt với tùy chọn hỏi xác nhận:
+
+rm -i danh-sach-lenh-ban-sao.txt
+
+6. Thử xóa thư mục bai-tap bằng rmdir
+cd ..
+rmdir bai-tap
+
+
+Lệnh không thực hiện được do thư mục vẫn còn file bên trong.
+
+7. Xóa toàn bộ thư mục bai-tap
+
+Xóa đệ quy và an toàn:
+
+rm -ri bai-tap
+
+8. Quay về thư mục home và kiểm tra
+cd ~
+ls

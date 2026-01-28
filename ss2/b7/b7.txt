@@ -1,0 +1,61 @@
+Mở file xin-chao.txt bằng trình soạn thảo Vim:
+
+vim xin-chao.txt
+
+2. Sao chép dòng
+
+Di chuyển con trỏ đến dòng có nội dung:
+
+Toi dang hoc Linux
+
+
+Nhấn phím:
+
+yy
+
+
+để sao chép (copy) toàn bộ dòng hiện tại.
+
+3. Dán dòng đã sao chép
+
+Di chuyển con trỏ xuống cuối file.
+
+Nhấn phím:
+
+p
+
+
+để dán dòng vừa sao chép xuống dưới con trỏ.
+
+Lặp lại phím p 3 lần để dán thêm 3 dòng giống nhau.
+
+4. Xóa dòng
+
+Di chuyển con trỏ đến một dòng vừa được dán.
+
+Nhấn phím:
+
+dd
+
+
+để xóa dòng đó.
+
+5. Hoàn tác thao tác xóa
+
+Nhấn phím:
+
+u
+
+
+để undo, khôi phục lại dòng vừa xóa.
+
+6. Lưu và thoát Vim
+
+Nhấn Esc để về chế độ Normal
+
+Gõ:
+
+:wq
+
+
+để lưu file và thoát Vim.

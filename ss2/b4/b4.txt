@@ -1,0 +1,52 @@
+1. Chuẩn bị dữ liệu
+
+Vào thư mục hoc-linux, tạo thư mục mới du-lieu và đi vào thư mục đó:
+
+cd ~/hoc-linux
+mkdir du-lieu
+cd du-lieu
+
+2. Tạo file danh-sach-qua.txt
+touch danh-sach-qua.txt
+
+3. Thêm dòng đầu tiên bằng toán tử >
+
+Sử dụng lệnh echo và toán tử > để ghi dòng chữ "Tao" vào file:
+
+echo "Tao" > danh-sach-qua.txt
+
+
+Toán tử > ghi nội dung vào file và ghi đè nội dung cũ (nếu có).
+
+4. Thêm các dòng tiếp theo bằng toán tử >>
+
+Sử dụng >> để thêm lần lượt các dòng:
+
+echo "Chuoi" >> danh-sach-qua.txt
+echo "Cam" >> danh-sach-qua.txt
+echo "Xoai" >> danh-sach-qua.txt
+echo "Tao my" >> danh-sach-qua.txt
+echo "Tao ta" >> danh-sach-qua.txt
+
+
+Toán tử >> ghi tiếp vào cuối file mà không làm mất dữ liệu đã có.
+
+5. Xem lại nội dung file
+cat danh-sach-qua.txt
+
+
+Nội dung file sau khi hoàn thành:
+
+Tao
+Chuoi
+Cam
+Xoai
+Tao my
+Tao ta
+
+6. Trả lời câu hỏi báo cáo
+
+Câu hỏi: Nếu ở bước 4 dùng > thay vì >> thì điều gì xảy ra?
+
+Trả lời:
+Nếu dùng toán tử > ở bước 4, mỗi lần thực hiện lệnh echo sẽ ghi đè toàn bộ nội dung file. Kết quả là file chỉ giữ lại dòng cuối cùng được ghi, các dòng trước đó sẽ bị mất.

@@ -1,0 +1,71 @@
+Bước 1: Chuẩn bị
+
+1. Xác định thông tin server
+
+Thông tin kết nối SSH gồm:
+
+Username của server (ví dụ: student)
+
+Địa chỉ IP của server (ví dụ: 192.168.1.100)
+
+Ví dụ định dạng đầy đủ:
+
+student@192.168.1.100
+
+
+2. Kiểm tra thư mục .ssh trên máy cá nhân
+
+Tại terminal hoặc PowerShell, chạy:
+
+ls ~/.ssh
+
+
+Nếu thư mục đã tồn tại: tiếp tục bước sau.
+
+Nếu chưa có, tạo mới:
+
+mkdir ~/.ssh
+
+Bước 2: Tạo file config
+
+1. Tạo hoặc mở file config trong thư mục ~/.ssh
+
+nano ~/.ssh/config
+
+
+(hoặc dùng vim, notepad, code tùy hệ điều hành)
+
+2. Thêm nội dung theo mẫu
+
+Ví dụ cấu hình (thay thông tin cho đúng với server của bạn):
+
+Host my-linux
+    HostName 192.168.1.100
+    User student
+    Port 22
+
+
+Giải thích:
+
+Host my-linux: tên rút gọn dùng khi kết nối
+
+HostName: địa chỉ IP hoặc domain của server
+
+User: username đăng nhập
+
+Port: cổng SSH (mặc định là 22)
+
+3. Lưu file lại
+
+Với nano: Ctrl + O → Enter → Ctrl + X
+
+Bước 3: Kết nối kiểm thử
+
+Tại terminal, gõ lệnh:
+
+ssh my-linux
+
+
+Nếu chưa cài SSH key, hệ thống sẽ yêu cầu nhập mật khẩu.
+
+Sau khi nhập đúng mật khẩu, đăng nhập thành công vào server.
