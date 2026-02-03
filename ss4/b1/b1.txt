@@ -1,0 +1,23 @@
+ 644 = rw-r--r--
+
+Owner (root / app user):
+ đọc + ghi → chỉnh sửa cấu hình
+
+Group & Others:
+ chỉ đọc → tránh sửa trái phép
+
+ Không có quyền thực thi → an toàn hơn
+
+ Không cho user khác ghi → giảm nguy cơ:
+
+bị chèn mã độc
+
+bị đổi password DB
+
+bị phá cấu hình
+
+ Trong thực tế:
+
+File config DB: 644 (hoặc 600 nếu cực kỳ nhạy cảm)
+
+Không bao giờ dùng 777 cho file config
